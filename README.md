@@ -20,3 +20,26 @@ The lab mirrors patterns used in real-world SaaS and internal platform teams.
 - Loki for log aggregation
 
 
+## Security
+
+- Secrets stored in Kubernetes secrets (never committed)
+- RBAC enabled with least-privilege access
+- Network policies restrict pod-to-pod communication
+- Container images scanned during CI
+- Regular dependency updates via automation
+
+TODO:
+TLS
+mTLS
+cert-manager
+audit logging
+
+
+## Skills Demonstrated
+
+- Infrastructure as Code and reproducibility
+- Kubernetes administration
+- CI/CD pipeline design
+- Secure system configuration
+- Monitoring, alerting, and incident readiness
+- End-to-end system ownership
