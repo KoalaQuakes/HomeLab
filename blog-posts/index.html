@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vue Blog App</title>
+  <script src="https://unpkg.com/vue@3"></script>
+</head>
+
+<body>
+
+<div id="app">
+  <h1>My Vue Blog</h1>
+
+  <div>
+    <input v-model="newTitle" placeholder="Post title">
+    <textarea v-model="newContent" placeholder="Write your post"></textarea>
+    <button @click="addPost">Publish Post</button>
+  </div>
+
+  <hr>
+
+  <div v-for="post in posts">
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.content }}</p>
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
